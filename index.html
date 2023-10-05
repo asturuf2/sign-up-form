@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>sign-up-sheet</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js"></script>
+</head>
+<body>
+    <div class="container">
+        <div class="sidebar">
+            <img src="halie-west-25xggax4bSA-unsplash.jpg" alt="plant-image">
+            <div class="text-wrapper">
+                <h1 class="overlay-text">ODIN</h1>
+            </div>
+        </div>
+        <div class="form-side">
+            <p>This is not a real online service! You know you need something like this in your life to help you realize your deepest dreams. Sign up <em>now</em> to get started.</p>
+            <p>You <em>know</em> you want to.</p>
+            <form action="example.com/path" method = "post" id="form">
+                <legend>Let's do this!</legend>
+                <ul>
+                    <div class = "input_container">
+                        <li>
+                            <label for="first_name">FISRT NAME</label>
+                            <input type="text" id="first_name" name = "user_first_name" required/>
+                        </li>
+                        <li>
+                            <label for="last_name">LAST NAME</label>
+                            <input type="text" id="last_name" name = "user_last_name" required/>
+                        </li>
+                        <li>
+                            <label for="mail">EMAIL</label>
+                            <input type="email" id="mail" name = "user_email" required/>
+                        </li>
+                    </div>
+                    <div class = "input_container_2">
+                        <li>
+                            <label for="number">PHONE NUMBER</label>
+                            <input type="tel" id="number" name = "user_number" pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}" required/>
+                        </li>
+                        <li>
+                            <label for="passwword">PASSWORD</label>
+                            <input type="password" id="password" name = "user_password" required/>
+                        </li>
+                        <li>
+                            <label for="confirm_passwword">CONFIRM PASSWORD</label>
+                            <input type="password" id="confirm_password" name = "user_password" required/>
+                        </li>
+                    </div>
+                </ul>
+            </form>
+            <button type="submit" form="form">Create Account</button>
+            <p>Already have an account? <a href="https://www.youtube.com/watch?v=3vvBOD1V5Wk&ab_channel=MiguelClimbs" onclick="window.open('#','_blank');window.open(this.href,'_self');">Log in</a></p>
+        </div>
+    </div>
+</body>
+</html>
